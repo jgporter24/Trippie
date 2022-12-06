@@ -4,7 +4,8 @@
 
 ## USER STORY/OVERVIEW
 
-AS A 
+As a traveler I want an application that can document the cities I plan to travel to and provide me the projected weather for those cities. I want an account to be able to add and remove places and save them in a trip planner.
+
 
 ## ACCEPTANCE CRITERIA
 
