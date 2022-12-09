@@ -1,0 +1,22 @@
+{
+  "name": "numero_uno",
+  "version": "1.0.0",
+  "main": "form.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgporter24/numero_uno.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jgporter24/numero_uno/issues"
+  },
+  "homepage": "https://github.com/jgporter24/numero_uno#readme",
+  "description": "",
+  "dependencies": {
+    "tw-elements": "^1.0.0-alpha13"
+  }
+}
