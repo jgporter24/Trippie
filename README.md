@@ -16,7 +16,7 @@ GIVEN a functional Express.js API
 
 GITHUB REPO:
 
-<https://github.com/jgporter24/numero_uno.git>
+<https://github.com/jgporter24/Trippie.git>
 
 OUR SLIDESHOW:
 
