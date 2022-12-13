@@ -27,4 +27,14 @@ Playlist.init(
             allowNull: false,
         },
 
+    },
+    {
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'playlist',
     }
+);
+
+module.exports = Playlist;
