@@ -7,8 +7,8 @@ router.get('/', async (req, res) => {
         const tripData = await Trip.findAll({
             include: [
                 {
-                    model: User,
-                    attributes: ['name'],
+                    model: Trip,
+                    attributes: ['start', 'end', 'distance','duration'],
                 },
             ],
         });
@@ -29,8 +29,8 @@ router.get('/trip/:id', async (req, res) => {
         const tripData = await Trip.findByPk(req.params.id, {
             include: [
                 {
-                    model: User,
-                    attributes: ['name'],
+                    model: Trip,
+                    attributes: ['start', 'end', 'distance', 'duration'],
                 },
             ],
         });
