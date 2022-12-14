@@ -44,13 +44,13 @@ file inside of the insomnia file, by selecting create and importing from file.
 
 ## CREDITS
 
-Jon Snover/ JonSno29
+Jon Snover/  https://github.com/JonSno29
 
-Jess Porter/ jgporter24
+Jess Porter/ https://github.com/jgporter24
 
-Anderw Simmons/
+Anderw Simmons/ https://github.com/asimmons03
 
-Timothy Wardlow/timothy-wardlow
+Timothy Wardlow/ https://github.com/timothy-wardlow
 
 ## LICENSE
 
