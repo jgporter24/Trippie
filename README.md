@@ -4,7 +4,9 @@
 
 ## USER STORY/OVERVIEW
 
-As a traveler I want an application that can document the cities I plan to travel to and provide me the projected weather for those cities. I want an account to be able to add and remove places and save them in a trip planner.
+As a traveler I want an application that can document the cities I plan to travel to and provide me the projected weather for those cities. I want an 
+
+account to be able to add and remove places and save them in a trip planner.
 
 
 ## ACCEPTANCE CRITERIA
@@ -20,7 +22,7 @@ GITHUB REPO:
 
 OUR SLIDESHOW:
 
-
+https://docs.google.com/presentation/d/1S2xHH_s0Z9l7G_RmWtcCa_WFnUHE2G7x43-6d2t5Y6U/edit#slide=id.g1b8cd3d60d1_0_0
 
 ## INSTALLATION, USAGE & MOCK-UP
 
@@ -44,15 +46,15 @@ file inside of the insomnia file, by selecting create and importing from file.
 
 Jon Snover/ JonSno29
 
-Jess Porter
+Jess Porter/ jgporter24
 
-Anderw Simmons
+Anderw Simmons/
 
-Timothy Wardlow
+Timothy Wardlow/timothy-wardlow
 
 ## LICENSE
 
-MIT License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## FEATURES
 
@@ -80,4 +82,4 @@ Use the "scout rule" to help others.
 
 ## CONTACT
 
-Snoverjon@gmail.com
+
