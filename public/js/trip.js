@@ -75,7 +75,7 @@ function initMap() {
             lng: 33.51
         },
         zoom: 5,
-        mapTypeId: 'satellite',
+        mapId: '484602bd2db85c42',
 
     });
 
