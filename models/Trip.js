@@ -41,4 +41,4 @@ Trip.init(
     }
 );
 
-modeul.exports = Trip;
+module.exports = Trip;
