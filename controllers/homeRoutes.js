@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Trip, Playlist} = require('../models');
+const { User, Trip } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -7,8 +7,8 @@ router.get('/', async (req, res) => {
         const tripData = await Trip.findAll({
             include: [
                 {
-                    model: Trip,
-                    attributes: ['start', 'end', 'distance','duration'],
+                    model: User,
+                    attributes: ['name'],
                 },
             ],
         });
@@ -29,8 +29,8 @@ router.get('/trip/:id', async (req, res) => {
         const tripData = await Trip.findByPk(req.params.id, {
             include: [
                 {
-                    model: Trip,
-                    attributes: ['start', 'end', 'distance', 'duration'],
+                    model: User,
+                    attributes: ['name'],
                 },
             ],
         });
