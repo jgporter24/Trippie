@@ -15,8 +15,11 @@
     "url": "https://github.com/jgporter24/numero_uno/issues"
   },
   "homepage": "https://github.com/jgporter24/numero_uno#readme",
-  "description": "",
   "dependencies": {
     "tw-elements": "^1.0.0-alpha13"
-  }
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "description": ""
 }
