@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/jgporter24/numero_uno#readme",
   "dependencies": {
+    "handlebars": "^4.7.7",
     "tw-elements": "^1.0.0-alpha13"
   },
   "devDependencies": {

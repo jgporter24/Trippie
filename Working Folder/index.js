@@ -45,3 +45,24 @@ $(window).scroll(function(){
          .end().filter("[href='#"+id+"']").parent().addClass("font-bold border-yellow-600");
    }                   
 });
+
+
+// click event for button // 
+var button = document.createElement("button");
+button.innerHTML = "Add Input";
+
+// Create a container element where the input field will be added
+var container = document.createElement("div");
+
+// Attach an event listener to the button
+button.addEventListener("click", function() {
+  // Create the input field
+  var input = document.createElement("input");
+  input.type = "text";
+  input.name = "input_" + (container.childNodes.length + 1);
+  container.appendChild(input);
+});
+
+// Add the button and container to the page
+document.body.appendChild(button);
+document.body.appendChild(container);
