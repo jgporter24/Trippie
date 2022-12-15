@@ -12,9 +12,15 @@ I want an account to be able to add and remove places and save them in a trip pl
 
   ## TABLE OF CONTENTS:
 
-🎗[INSTALLATION](#installation)   🎗[LICENSE](#license)   🎗[TESTS](#tests)  🎗[DEPENDENCIES](#dependencies)   🎗[CONTACT](#contact)                        
-  
- ## INSTALLATION:
+ 🎗[INSTALLATION](#installation)                                       
+ 
+ 🎗[LICENSE](#license)  
+ 
+ 🎗[TESTS](#tests)
+ 
+ 🎗[DEPENDENCIES](#dependencies)   
+
+## INSTALLATION:
 
 <p style="display: inline-block;" align="center">
   <kbd>
@@ -68,7 +74,7 @@ I want an account to be able to add and remove places and save them in a trip pl
 
 🎗 GITHUB REPO:
 
-   <https://github.com/jgporter24/Trippie.git>
+  <https://github.com/jgporter24/Trippie.git>
 
 🎗 OUR SLIDESHOW:
 
@@ -89,7 +95,7 @@ I want an account to be able to add and remove places and save them in a trip pl
 
 
 ```bash
-# "bcrypt": "^5.1.0",
+    "bcrypt": "^5.1.0",
     "connect-session-sequelize": "^7.1.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
@@ -105,7 +111,7 @@ I want an account to be able to add and remove places and save them in a trip pl
     "require": "^2.4.20",
     "seeds": "^2.3.1",
     "sequelize": "^6.27.0"
-# The server will initialize in the <http://localhost:3001>
+    The server will initialize in the <http://localhost:3001>
 ```
 ## LICENSE:
 
