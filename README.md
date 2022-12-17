@@ -70,7 +70,7 @@ I want an account to be able to add and remove places and save them in a trip pl
     <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" />
 </kbd>
   
- ## LIVE LINK:
+ ## LIVE LINK/ MOCK-UP:
 
 🎗 GITHUB REPO:
 
@@ -79,6 +79,10 @@ I want an account to be able to add and remove places and save them in a trip pl
 🎗 OUR SLIDESHOW:
 
    https://docs.google.com/presentation/d/1S2xHH_s0Z9l7G_RmWtcCa_WFnUHE2G7x43-6d2t5Y6U/edit#slide=id.g1b8cd3d60d1_0_0
+
+
+<img width="700px" height="275px" src="Screen%20Shot%202022-12-16%20at%209.17.59%20PM.png"/>
+
 
 ## CREDITS:
 
