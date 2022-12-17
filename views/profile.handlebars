@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-auto">
+        <h2>Happy tripping, {{name}}!</h2>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+
+        <form class="form new-trip-form">
+            <div class="form-group">
+                <label for="trip-name">Location and Date</label>
+                <input class="form-input" type="text" id="trip-name" name="trip-name"
+                    placeholder="Birmingham, AL December 2022" />
+            </div>
+            <div class="form-group">
+                <label for="trip-description">Experiences</label>
+                <textarea class="form-input" id="trip-description" name="trip-description"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+    {{#if trips.length}}
+    <div class="col-md-6 trip-list">
+        <h3>Previous Trips:</h3>
+
+        {{#each trips as |trip| }}
+        <div class="row mb-2">
+            <div class="col-md-8">
+                <h4><a href="/trip/{{trip.id}}">{{trip.name}}</a></h4>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-sm btn-danger" data-id="{{trip.id}}">Remove</button>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{/if}}
+</div>
+
+<script src="../public/js/profile.js"></script>

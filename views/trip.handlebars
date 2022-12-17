@@ -1,0 +1,37 @@
+<div class="grid-container">
+    <div class="banner">
+        <input type="file" id="filetag" hidden />
+        <label for="filetag" id="bannerBtn"><a>Please select a banner photo</a></label>
+        <br> <img id="preview" accept="image/jpeg,image/gif,image/png" hidden>
+    </div>
+    <div class="map">
+        <div class="map-example">
+            <div class="row">
+                <input id="pac-input" class="controls" type="text" placeholder="Search Bar" />
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <h3>{{name}}</h3>
+        <div id="date-info">
+            </h3>Trip created by {{user.name}} on {{format_date date_created}}</h3>
+        </div>
+        <div class="info">
+            <p>{{description}}</p>
+        </div>
+    </div>
+    <div class="pics">
+        <form id="post-form" class="post-form" method="post">
+            <label for="files"><a>Add Photos</a></label>
+            <input id="files" type="file" accept="image/jpeg,image/gif,image/png" multiple hidden />
+            <div class="photos">
+                <output id="result" />
+            </div>
+        </form>
+    </div>
+</div>
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmjTL40OKQIJLUfmJMILUDDh3UVt5by8E&libraries=places&callback=initMap">
+    </script>
+<script src="../public/js/trip.js"></script>
