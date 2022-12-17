@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Import Mapbox GL Directions -->
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.css
+        type=text/css"/>
+
+    <!-- Import Turf and Polyline -->
+    <script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mapbox-polyline/1.1.1/polyline.js"></script>
+    <meta charset="utf-8" />
+    <title>Route finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Import Mapbox GL JS -->
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="map"></div>
+    <div class="sidebar">
+        <h1>Trip</h1>
+        <div id="trip"></div>
+    </div>
+    <script>
+
+        mapboxgl.accessToken = 'pk.eyJ1IjoidGltb3RoeXdhcmRsb3ciLCJhIjoiY2t5dGR3dWwyMWNkbjJ1bzdob3BleG9qOSJ9.RRGAaBwkMg7rbDMY1V5e6A';
+        const map = new mapboxgl.Map({
+        container: 'map', // Specify the container ID
+        style: 'mapbox://styles/mapbox/light-v11', // Specify which map style to use
+        center: [-95.81, 39.51], // Specify the starting position [lng, lat]
+        zoom: 4 // Specify the starting zoom
+        });
+
+        const directions = new MapboxDirections({
+        accessToken: mapboxgl.accessToken,
+        unit: 'imperial',
+        profile: 'mapbox/driving',
+        alternatives: false,
+        overview: 'full',
+        annotations: { duration: true },
+        geometries: 'geojson',
+        controls: { instructions: true },
+        flyTo: false
+        });
+
+        map.addControl(directions, 'top-right');
+        map.scrollZoom.enable();
+    </script>
+
+</body>
+
+</html>

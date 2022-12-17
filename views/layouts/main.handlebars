@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIPPIE!</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../../public/css/jass.css">
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;700&family=Cinzel&family=Oswald&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="flex-column justify-space-around">
+        <header>
+
+            <a href="/">
+                <h1>TRIPPIE!</h1>
+            </a>
+
+
+            <nav>
+                <!-- Conditionally render login or logout links -->
+                {{#if logged_in}}
+                <a href="/profile">Profile</a>
+                <button class="no-button" id="Profile"></button>
+
+                <a href="/login">Login</a>
+                <button class="no-button" id="login"></button>
+
+                <a href="/logout">Logout</a>
+                <button class="no-button" id="logout"></button>
+
+                {{/if}}
+            </nav>
+        </header>
+        <main class="container container-fluid mt-5">
+            <!-- Render the sub layout -->
+            {{{ body }}}
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+
+    <!-- Render script for logged in users only -->
+    {{#if logged_in}}
+    <script src="../../public/js/login.js"></script>
+    {{/if}}
+    <script src="../../public/js/trip.js"></script>
+    </div>
+
+
+
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmjTL40OKQIJLUfmJMILUDDh3UVt5by8E&callback=initMap&libraries=places&v=weekly">
+            async ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.js"></script>
+
+</body>
+
+</html>
