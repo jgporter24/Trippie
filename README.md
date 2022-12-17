@@ -82,7 +82,7 @@ I want an account to be able to add and remove places and save them in a trip pl
 
 
 <img width="700px" height="275px" src="Screen%20Shot%202022-12-16%20at%209.17.59%20PM.png"/>
-
+<img width="700px" height="275px" src="trippie.gif"/>
 
 ## CREDITS:
 
