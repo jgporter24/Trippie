@@ -31,16 +31,14 @@
                 {{#if logged_in}}
                 <a href="/profile">Profile</a>
                 <button class="no-button" id="Profile"></button>
-
-                <a href="/login">Login</a>
-                <button class="no-button" id="login"></button>
-
-                <a href="/logout">Logout</a>
-                <button class="no-button" id="logout"></button>
-
-                {{/if}}
-            </nav>
-        </header>
+                <a href="/">TRIPS</a>
+                <button class="no-button" id="Profile"></button>
+                    <a href="/login">logout</a>
+                    <button class="no-button" id="Login"></button>
+                    {{/if}}
+                </nav>
+             
+                   </header>
         <main class="container container-fluid mt-5">
             <!-- Render the sub layout -->
             {{{ body }}}
@@ -52,7 +50,7 @@
 
     <!-- Render script for logged in users only -->
     {{#if logged_in}}
-    <script src="../../public/js/login.js"></script>
+    <script src="../../public/js/logout.js"></script>
     {{/if}}
     <script src="../../public/js/trip.js"></script>
     </div>
